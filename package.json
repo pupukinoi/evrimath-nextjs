@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages@1",
+    "build": "next build",
+    "deploy": "next build && wrangler pages deploy out --project-name evrima-thailand --branch master",
     "start": "next start",
     "lint": "next lint"
   },
